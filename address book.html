@@ -1,0 +1,517 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        table{
+            height: 80px;
+            width: 1400px;
+            border-collapse:collapse; 
+        }
+        form{
+            color:black;
+            text-align: right;
+            align-items: end;
+        }
+        .heading{
+            background-color:#a2d2ff;
+            letter-spacing:8px;
+            color:white;
+            text-align:center;
+        }
+        .def{
+        
+            letter-spacing:5px;
+        }
+        .abcd{ 
+            text-align:center;
+            font-weight:bold;
+            font-style:italic;
+            font-size:15px;
+            font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+        
+
+           
+
+
+        }
+        .efgh{
+            background-color:#ffafcc;
+            text-align:center;
+            font-weight:bold;
+            font-style:italic;
+            font-size:15px;
+            font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+
+        }
+
+        
+
+    </style>
+</head>
+<body>
+    <form>
+        <input type="text" name="" id="myInput" placeholder=" Searching For.?" onkeyup="searchFun()">
+        <button type="Submit"> Search </button>
+       
+        
+        
+       
+    </form>
+    <center>
+        <table border="3" id="myTable">
+            <tr> <th colspan="6" class="heading"> MY ADDRESS BOOK </th></tr>
+            <TR class="def">
+                <th> SERIAL NO.</th>
+                <TH> NAME  </TH>
+                <TH > ADDRESS</TH>
+                <TH> TELEPHONE </TH>
+                <TH > EMAIL </TH>
+                <TH> DELETE </TH>
+            
+            </TR>
+            <tr class="efgh" id="1">
+                <td> 1 </td>
+                <td> Anshu Dhawan </td>
+                <td> Star Colony,Sirhind  </td>
+                <td>  9988496913</td>
+                <td> anshudhawan28@gmail.com </td>
+                <TD>  <button onclick ="deleteRow(this)"> DELETE </button></TD>
+               
+                
+            </tr>
+            <tr class="abcd">
+                <td> .  </td>
+                <td>  </td>
+                <td>  </td>
+                <td>  </td>
+                <td>  </td>
+            <tr class="efgh" id="2">
+                <td> 2 </td>
+                <td> Laksh Dhawan </td>
+                <td> Gandhi Colony,Rajpura </td>
+                <td>  4567890456</td>
+                <td>  lakshdhawan46@gmail.com</td>
+                <TD>  <button onclick ="deleteRow(this)"> DELETE </button></TD>
+                
+                
+               
+                 
+                
+            </tr>
+            <tr class="abcd">
+                <td> .  </td>
+                <td>  </td>
+                <td>  </td>
+                <td>  </td>
+                <td>  </td>
+            <tr class="efgh" id="3">
+                <td > 3 </td>
+                <td> Diya Khatter</td>
+                <td> Dashmesh Colony,Rajpura  </td>
+                <td> 4678903457</td>
+                <td> diyakhatter66@gmail.com</td>
+                <TD>  <button onclick ="deleteRow(this)"> DELETE </button></TD>
+              
+                
+                
+            <tr class="abcd">
+                <td> .  </td>
+                <td>  </td>
+                <td>  </td>
+                <td>  </td>
+                <td>  </td>
+            <tr class="efgh" id="4"> 
+                <td> 4 </td>
+                <td> Komal Dhawan</td>
+                <td> Guru Nank Dev Colony,Sirhind  </td>
+                <td> 8054972686</td>
+                <td> komaldhawan55@gmail.com</td>
+                <TD>  <button onclick ="deleteRow(this)"> DELETE </button></TD>
+                
+                
+               
+            </tr>
+            <tr class="abcd">
+                <td> .  </td>
+                <td>  </td>
+                <td>  </td>
+                <td>  </td>
+                <td>  </td>
+            <tr class="efgh" id="5">
+                <td> 5 </td>
+                <td>  Gurleen kaur </td>
+                <td> Bhateja Colony,Rajpura </td>
+                <td> 6283400291</td>
+                <td> gurleenkaur@gmail.com</td>
+                <TD>  <button onclick ="deleteRow(this)"> DELETE </button></TD>
+
+                
+              
+
+            </tr>
+            <tr class="abcd">
+                <td> . </td>
+                <td>  </td>
+                <td>  </td>
+                <td>  </td>
+                <td>  </td>
+            <tr class="efgh" id="6">
+                <td> 6 </td>
+                 <td> Bhumika </td>
+                 <td>Cheema Colony, Bassi Pathana </td>
+                 <td> 5678989966</td>
+                 <td> bhumika33@gmail.com</td>
+                 <TD>  <button onclick ="deleteRow(this)"> DELETE </button></TD>
+                 
+                
+                
+                </tr>
+                <tr class="abcd">
+                    <td> .  </td>
+                    <td>  </td>
+                    <td>  </td>
+                    <td>  </td>
+                    <td>  </td>
+                <tr class="efgh" id="7">
+                    <td > 7 </td>
+                    <td>Indu </td>
+                    <td> Shamsher Colony, Pataila  </td>
+                    <td> 7986583392</td>
+                    <td> indu26@gmail.com</td>
+                    <TD>  <button onclick ="deleteRow(this)"> DELETE </button></TD>
+                   
+                
+                   
+                </tr>
+                <tr class="abcd">
+                    <td> . </td>
+                    <td>  </td>
+                    <td>  </td>
+                    <td>  </td>
+                    <td>  </td>
+                <tr class="efgh" id="8">
+                    <td> 8 </td>
+                    <td> Raj Kumar </td>
+                    <td> Suncity Parikrama Panchkula,Chandigarh  </td>
+                    <td> 7896339456</td>
+                    <td> rajkumar77@gmail.com</td>
+                    <TD>  <button onclick ="deleteRow(this)"> DELETE </button></TD>
+                
+                    
+                </tr>
+                <tr class="abcd">
+                    <td> .  </td>
+                    <td>  </td>
+                    <td>  </td>
+                    <td>  </td>
+                    <td>  </td>
+                <tr class="efgh" id="9">
+                    <td> 9 </td>
+                    <td> Anmol kaur </td>
+                    <td> Ireo Rise ,Sector-99,Mohali</td>
+                    <td> 5678908900</td>
+                    <td> anmolkaur33@gmail.com</td>
+                    <TD>  <button onclick ="deleteRow(this)"> DELETE </button></TD>
+                    
+                
+                   
+                </tr>
+                <tr class="abcd">
+                    <td> .  </td>
+                    <td>  </td>
+                    <td>  </td>
+                    <td>  </td>
+                    <td>  </td>
+                <tr class="efgh" id="10"> 
+                    <td> 10 </td>
+                    <td> Gunjan Kumar </td>
+                    <td> Motiaz Royal Citi Zirakpur,Chandigarh </td>
+                    <td> 5679012386</td>
+                    <td> gunjankumar39@gmail.com </td>
+                    <TD>  <button onclick ="deleteRow(this)"> DELETE </button></TD>
+                
+                    
+                </tr>
+                <tr class="abcd">
+                    <td> .  </td>
+                    <td>  </td>
+                    <td>  </td>
+                    <td>  </td>
+                    <td>  </td>
+                <tr class="efgh" id="11"> 
+                    <td> 11 </td>
+                    <td>Poonam Rakheja  </td>
+                    <td> ATS Casa Espana ,Sector-121,Mohali</td>
+                    <td> 7689412305</td>
+                    <td> poonam48@gmail.com</td>
+                    <TD>  <button onclick ="deleteRow(this)"> DELETE </button></TD>
+                    
+                
+                    
+                </tr>
+                <tr class="abcd">
+                    <td> .  </td>
+                    <td>  </td>
+                    <td>  </td>
+                    <td>  </td>
+                    <td>  </td>
+                <tr class="efgh" id="12">
+                    <td> 12 </td>
+                    <td> Niharika  </td>
+                    <td> Punjabi baag ,Samana </td>
+                    <td> 5612789043</td>
+                    <td> niharika41@gmail.com </td>
+                    <TD>  <button onclick ="deleteRow(this)"> DELETE </button></TD>
+                
+                   
+                </tr>
+                <tr class="abcd">
+                    <td> .  </td>
+                    <td>  </td>
+                    <td>  </td>
+                    <td>  </td>
+                    <td>  </td>
+                <tr class="efgh" id="13">
+                    <td > 13 </td>
+                    <td> Aditya Dhingra </td>
+                    <td> Green Town,Samana  </td>
+                    <td> 5761230987</td>
+                    <td> aditya23@gmail.com</td>
+                    <TD>  <button onclick ="deleteRow(this)"> DELETE </button></TD>
+                    
+                
+                    </tr>
+                <tr class="abcd">
+                    <td> .  </td>
+                    <td>  </td>
+                    <td>  </td>
+                    <td>  </td>
+                    <td>  </td>
+                <tr class="efgh" id="14">
+                    <td> 14 </td>
+                    <td> Abhinav </td>
+                    <td>  Savitry Greens , Zirkpur </td>
+                    <td>  4560981234</td>
+                    <td> abhinav56@gmail.com </td>
+                    <TD>  <button onclick ="deleteRow(this)"> DELETE </button></TD>
+                   
+                   </tr>
+                <tr class="abcd">
+                    <td> .  </td>
+                    <td>  </td>
+                    <td>  </td>
+                    <td>  </td>
+                    <td>  </td>
+                <tr class="efgh" id="15">
+                    <td> 15 </td>
+                    <td> Harshit Wadhwa </td>
+                    <td>  Urban State ,Pataila </td>
+                    <td> 4567812309</td>
+                    <td> harshit22@gmail.com</td>
+                    <TD>  <button onclick ="deleteRow(this)"> DELETE </button></TD>
+                    
+                
+                  
+                </tr>
+                <tr class="abcd">
+                    <td> .  </td>
+                    <td>  </td>
+                    <td>  </td>
+                    <td>  </td>
+                    <td>  </td>
+                <tr class="efgh" id="16">
+                    <td> 16</td>
+                    <td> Disha Soft </td>
+                    <td>  khushwant Colony,Bassi Pathana </td>
+                    <td> 9512008713</td>
+                    <td> dishasoft67@gmail.com</td>
+                    <TD>  <button onclick ="deleteRow(this)"> DELETE </button></TD>
+                    
+                
+                </tr>
+                <tr class="abcd">
+                    <td> .  </td>
+                    <td>  </td>
+                    <td>  </td>
+                    <td>  </td>
+                    <td>  </td>
+                <tr class="efgh" id="17"> 
+                    <td > 17 </td>
+                    <td> Muskan Rabbar </td>
+                    <td> Chodhry Colony ,Sirhind </td>
+                    <td> 76120435677</td>
+                    <td> muskan11@gmail.com</td>
+                    <TD>  <button onclick ="deleteRow(this)"> DELETE </button></TD>
+
+                
+                  
+                </tr>
+                <tr class="abcd">
+                    <td> .  </td>
+                    <td>  </td>
+                    <td>  </td>
+                    <td>  </td>
+                    <td>  </td>
+                <tr class="efgh" id="18">
+                    <td> 18 </td>
+                    <td> Sahiba </td>
+                    <td> SBS colony ,Rajpura </td>
+                    <td> 1450876234</td>
+                    <td> sahiba34@gmail.com </td>
+                    <TD>  <button onclick ="deleteRow(this)"> DELETE </button></TD>
+                   
+                
+                    
+                </tr>
+                <tr class="abcd">
+                    <td> .  </td>
+                    <td>  </td>
+                    <td>  </td>
+                    <td>  </td>
+                    <td>  </td>
+                <tr class="efgh" id="19">
+                    <td > 19 </td>
+                    <td> Manya Singh  </td>
+                    <td> Sangam Vihar A block,New Delhi </td>
+                    <td>   4173409871</td>
+                    <td> manya43@gmail.com </td>
+                    <TD>  <button onclick ="deleteRow(this)"> DELETE </button></TD>
+                  
+                
+
+                </tr>
+                <tr class="abcd">
+                    <td> .  </td>
+                    <td>  </td>
+                    <td>  </td>
+                    <td>  </td>
+                    <td>  </td>
+                <tr class="efgh" id="20"> 
+                    <td> 20 </td>
+                    <td> Nishant </td>
+                    <td>Lodhi Colony,Delhi  </td>
+                    <td> 7801234098</td>
+                    <td> nishant51@gmail.com</td>
+                    <TD>  <button onclick ="deleteRow(this)"> DELETE </button></TD>
+
+                
+                   </tr>
+                <tr class="abcd">
+                    <td> .  </td>
+                    <td>  </td>
+                    <td>  </td>
+                    <td>  </td>
+                    <td>  </td>
+                <tr class="efgh" id="21">
+                    <td> 21 </td>
+                    <td> Dhruv </td>
+                    <td> IC Colony Borivali,Mumbai  </td>
+                    <td> 9087671234</td>
+                    <td> dhruv39@gmail.com</td>
+                    <TD>  <button onclick ="deleteRow(this)"> DELETE </button></TD>
+                    
+                
+                  
+                </tr>
+                <tr class="abcd">
+                    <td> .  </td>
+                    <td>  </td>
+                    <td>  </td>
+                    <td>  </td>
+                    <td>  </td>
+                <tr class="efgh" id="22">
+                    <td> 22 </td>
+                    <td> Mayank </td>
+                    <td> Bibanwa Road Devpura ,Rajasthan</td>
+                    <td> 3409812345</td>
+                    <td> mayank21@gmail.com</td>
+                    <TD>  <button onclick ="deleteRow(this)"> DELETE </button></TD>
+                    
+                
+                    </tr>
+                <tr class="abcd">
+                    <td> .  </td>
+                    <td>  </td>
+                    <td>  </td>
+                    <td>  </td>
+                    <td>  </td>
+                <tr class="efgh" id="23">
+                    <td > 23 </td>
+                    <td> Arpita </td>
+                    <td> Vaishali Nagar ,Jaipur, Rajasthan </td>
+                    <td> 9870123098</td>
+                    <td> arpita40@gmail.com</td>
+                    <TD>  <button onclick ="deleteRow(this)"> DELETE </button></TD>
+                
+                    </tr>
+                <tr class="abcd">
+                    <td> .  </td>
+                    <td>  </td>
+                    <td>  </td>
+                    <td>  </td>
+                    <td>  </td>
+                <tr class="efgh" id="24">
+                    <td> 24  </td>
+                    <td> Oasheen  </td>
+                    <td> Buddha Colony ,Patna,Bihar </td>
+                    <td> 9888430192 </td>
+                    <td> oasheen20@gmail.com</td>
+                    <TD>  <button onclick ="deleteRow(this)"> DELETE </button></TD>
+                   
+                
+                  </tr>
+                <tr class="abcd">
+                    <td> .  </td>
+                    <td>  </td>
+                    <td>  </td>
+                    <td>  </td>
+                    <td>  </td>
+                <tr class="efgh" id="25"> 
+                    <td > 25</td>
+                    <td> Akshit Verma</td>
+                    <td> Indira Nagar,Basavanagudi ,Bengaluru,Karnataka </td>
+                    <td> 4120985678</td>
+                    <td> akshitverma44@gmail.com </td>
+                    <TD>  <button onclick ="deleteRow(this)"> DELETE </button></TD>
+
+                
+                  
+                </tr>
+                </table>
+                <script type="text/javascript">
+                
+                    function   searchFun(){
+                        let filter=document.getElementById('myInput').value.toUpperCase();
+                        let myTable=document.getElementById('myTable');
+                        let tr=myTable.getElementsByTagName('tr');
+                        for(var i=1;i<tr.length;i++){
+                            let td=tr[i].getElementsByTagName('td')[1];
+                            if(td){
+                                let textvalue=td.textContent;
+                                if(textvalue.toUpperCase().indexOf(filter) >-1){
+                                    tr[i].style.display="";
+                                 }else{
+                                    tr[i].style.display= "none"; 
+                                 }
+                            }
+                        }
+                     }  
+
+                function deleteRow(button){
+                    var row=button.parentNode.parentNode;
+                    row.parentNode.removeChild(row);
+                }
+                    
+                </script>
+                
+            </center>
+    
+
+        </table>
+
+    
+</body>
+</html>
